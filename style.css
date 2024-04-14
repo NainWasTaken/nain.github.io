@@ -1,0 +1,92 @@
+:root{
+--text: #eae9fc;
+--background: #010104;
+--primary: #ff94c9;
+--primary-hover: #ffc2e1;
+--secondary: #020024;
+--accent: #b67ece;
+}
+
+body {
+    background-color: var(--background);
+}
+
+.backdrop{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,0,36,0) 100%);
+    border-left: 0.25em solid;
+    border-left-color: var(--accent);
+    padding-bottom: 1rem;
+}
+
+.contacts{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    line-height: 3rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 1rem;
+    color: var(--primary);
+    font-size: 1.25em;
+    font-family: "Jersey 25";
+    padding-top: 2rem;
+    padding-left: 0.45rem;
+}
+
+@media (max-width: 800px){
+    .contacts{
+        flex-direction: column;
+    }
+}
+.name{
+    color: var(--primary);
+    font-size: 6em;
+    font-family: "Jersey 25";
+    transition: ease-out 250ms;
+    padding-left: 0.35rem;
+}
+
+.name:hover{
+    color: var(--primary-hover);
+    transition: ease-out 250ms;
+    padding-left: 0.45rem;
+}
+
+.desc{
+    color: var(--primary);
+    font-size: 1.75em;
+    max-width: 750px;
+    font-family: "Jersey 25";
+    padding-left: 0.5rem;
+    transition: ease-out 250ms;
+}
+
+.desc:hover{
+    color: var(--primary-hover);
+    transition: ease-out 250ms;
+    padding-left: 0.6rem;
+}
+
+.title{
+    font-size: 2em;
+    text-decoration: underline;
+    padding-top: 1rem;
+}
+
+.pdtop{
+    padding-top: 0.5rem;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: var(--primary);
+    transition: ease-out 250ms;
+}
+
+a:hover {
+    color: var(--primary-hover);
+    transition: ease-out 250ms;
+}
