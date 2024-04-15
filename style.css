@@ -5,6 +5,20 @@
 --primary-hover: #ffc2e1;
 --secondary: #020024;
 --accent: #b67ece;
+--alpha-zero: #00000000;
+--gradient-start: #020024;
+}
+@media (prefers-color-scheme: light){
+    :root{
+        --text: #040316;
+        --background: #fbfbfe;
+        --primary: #6b006b;
+        --primary-hover: #310031;
+        --secondary: #dddbff;
+        --accent: #b67ece;
+        --alpha-zero: #00000000;
+        --gradient-start: #ffdbff;
+    }
 }
 
 body {
@@ -15,7 +29,7 @@ body {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,0,36,0) 100%);
+    background: linear-gradient(90deg, var(--gradient-start) 0%, var(--alpha-zero) 100%);
     border-left: 0.25em solid;
     border-left-color: var(--accent);
     padding-bottom: 1rem;
