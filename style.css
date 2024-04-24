@@ -46,7 +46,6 @@ body {
     color: var(--primary);
     font-size: 1.25em;
     font-family: "Jersey 25";
-    padding-top: 2rem;
     padding-left: 0.45rem;
 }
 
@@ -92,6 +91,10 @@ body {
 
 .pdtop{
     padding-top: 0.5rem;
+}
+
+.pdbot{
+    padding-bottom: 0.5rem;
 }
 
 a:link, a:visited{
